@@ -32,18 +32,19 @@ function disableCity() {
     form.selectInput.disabled = !form.selectInput.disabled;
 }
 
-//Очищаем поле темы
+//Очищаем поле темы (при выборе радио-кнопки)
 function clearTheme() {
     form.otherTheme.value = "";
 }
 
+//Очищаем радио-кнопки
 function clearButt () {
     let radio = document.getElementsByName("radioButt");
         for (let button of radio) {
           button.checked = false;
         }
 }
-//Очищаем радио-кнопки
+//Очищаем радио-кнопки при заполнении поля
 function clearRadio() {
     if (form.otherTheme.value !== "") {
         clearButt();
@@ -72,6 +73,7 @@ submitForm = async (e) => {
     if (result.success) {
         form.online.checked = false;
         form.selectInput.disabled = false;
+        form.selectInput.value = "Выберите свой город";
         clearButt();
         clearTheme();
         form.problem.value = "";
@@ -82,6 +84,7 @@ submitForm = async (e) => {
     }
   };
 
+//Показать модалку
 function showModal () {
     let modal = document.getElementById("modal");
     let img = document.getElementById("gucci");
@@ -91,12 +94,14 @@ function showModal () {
     showCover();
 }
 
+//Убрать модалку
 function hideModal () {
     let modal = document.getElementById("modal");
     modal.style.display = "none";
     hideCover();
 }
 
+//Фон для модалки
 function showCover() {
     let coverDiv = document.createElement('div');
     coverDiv.id = 'cover-div';
@@ -104,6 +109,7 @@ function showCover() {
     document.body.append(coverDiv);
 }
 
+//Убираем фон
 function hideCover() {
     document.getElementById('cover-div').remove();
     document.body.style.overflowY = '';
