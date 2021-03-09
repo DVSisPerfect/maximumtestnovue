@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaximumForm</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container"> 
+        <h1 class="header">Форма подачи заявки в отдел сервиса и качества</h1>
+        <div class="formContainer">
+            <form name="rnd" id="rnd">
+                <div class="formBlock">
+                    <span class="formHeader mustHave">Ваш филиал</span>
+                    <div class="selectCity">
+                        <select class="selectInput" id="selectInput" name="selectInput">
+                            <option disabled selected hidden>Выберите свой город</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input class="checkOnline" type="checkbox" id="online" name="online">
+                        <label for="online">Онлайн</label>
+                    </div>
+                </div>
+                <div class="formBlock">
+                    <span class="formHeader mustHave">Тема обращения</span>
+                    <div class="radioBlock">
+                        <input class="radioInput" type="radio" id="badService" name="radioButt" value="badService">
+                        <label for="badService">Недоволен качеством услуг</label>
+                    </div>
+                    <div class="radioBlock">
+                        <input class="radioInput" type="radio" id="termination" name="radioButt" value="termination">
+                        <label for="termination">Расторжение договора</label>
+                    </div>
+                    <div class="radioBlock">
+                        <input class="radioInput" type="radio" id="noLetter" name="radioButt" value="noLetter">
+                        <label for="noLetter">Не приходит письмо активации на почту</label>
+                    </div>
+                    <div class="radioBlock">
+                        <input class="radioInput" type="radio" id="noCab" name="radioButt" value="noCab">
+                        <label for="noCab">Не работает личный кабинет</label>
+                    </div>
+                    <input class="textInput textRadio" type="text" id="otherTheme" name="otherTheme" placeholder="Другое">
+                </div>
+                <div class="formBlock">
+                    <span class="formHeader mustHave">Описание проблемы</span>
+                    <textarea class="textInput textArea" id="problem" name="problem" placeholder="Введите текст"></textarea>
+                </div>
+                <div class="formBlock">
+                    <span class="formHeader">Загрузка документов</span>
+                    <p class="fileBlock">Приложите, пожалуйста, экранный скриншот<br>
+                    Это поможет быстрее решить проблему
+                    </p>
+                    <input type="file" id="fileUpload" name="fileUpload" placeholder="Выберите файл">
+                </div>
+                <div class="formBlock">
+                    <input type="submit" id="submit" name="submit" placeholder="Отправить" disabled>
+                </div>
+            </form>
+        </div>
+        <div id="modal">
+            <img src="success_img.png" id="gucci">
+            <button id="remove-button" onclick="hideModal()">X</button>
+        </div>
+    </div>
+    
+</body>
+</html>
