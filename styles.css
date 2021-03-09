@@ -4,14 +4,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-font-family: 'Open Sans', sans-serif;
-font-size: 0.95rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.95rem;
 
 }
 .header {
     margin-bottom: 10px;
-font-size: 1.5rem;
-line-height: 2;
+    font-size: 1.5rem;
+    line-height: 2;
 }
 
 .container {
@@ -58,13 +58,13 @@ line-height: 2;
     height: 20px;
     width: 20px;
     vertical-align: middle;
-font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 .textInput {
     border: 1px solid rgb(200, 200, 200);
     padding: 5px 10px;
-font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .textRadio {
@@ -74,8 +74,8 @@ font-family: 'Open Sans', sans-serif;
 .fileBlock {
     margin-bottom: 10px;
     color: grey;
-font-size: 0.9rem;
-line-height: 1.2;
+    font-size: 0.9rem;
+    line-height: 1.2;
 }
 
 .textArea {
@@ -93,7 +93,6 @@ label {
     color: red;
 }
 
-
 input[type="submit"]:enabled {
 	margin-top: 15px;
 	background-color: #FF905A;
@@ -104,9 +103,10 @@ input[type="submit"]:enabled {
 	font-weight: bold;
 	text-transform: uppercase;
 	border-radius: 2px;
-font-family: 'Open Sans', sans-serif;
-border: none;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
 }
+
 .button {
 	margin-top: 15px;
 	background-color: #D5D5D5;
@@ -117,8 +117,8 @@ border: none;
 	font-weight: bold;
 	text-transform: uppercase;
 	border-radius: 2px;
-font-family: 'Open Sans', sans-serif;
-border: none;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
 }
 
 #modal {
